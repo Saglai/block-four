@@ -8,6 +8,7 @@ import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { AddPoductComponent } from './admin/add-poduct/add-poduct.component';
 import { AddUserComponent } from './admin/add-user/add-user.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UserListComponent } from './admin/user-list/user-list.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     DashboardComponent,
     AddPoductComponent,
-    AddUserComponent
+    AddUserComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule,
