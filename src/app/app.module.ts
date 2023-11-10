@@ -3,14 +3,25 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { AddPoductComponent } from './admin/add-poduct/add-poduct.component';
+import { AddUserComponent } from './admin/add-user/add-user.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    DashboardComponent,
+    AddPoductComponent,
+    AddUserComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

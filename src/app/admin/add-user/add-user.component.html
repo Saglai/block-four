@@ -1,0 +1,7 @@
+<h3>Add user</h3>
+<form #form="ngForm" (ngSubmit)="onSubmit()">
+    <input type="text" name="name" [(ngModel)]='name' placeholder="name">
+    <input type="text" name="age" [(ngModel)]='age' placeholder="age">
+
+    <button type="submit">Save</button>
+</form>

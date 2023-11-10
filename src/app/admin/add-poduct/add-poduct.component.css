@@ -1,0 +1,17 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+input {
+    padding: 15px;
+    margin: 5px;
+}
+
+button {
+    align-self: flex-end;
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 5px;
+}
