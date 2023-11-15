@@ -1,6 +1,6 @@
 import { inject } from '@angular/core';
 import { ActivatedRouteSnapshot, ResolveFn, Router } from '@angular/router';
-import { CommonService } from '../../services/auth.service';
+import { CommonService } from '../../services/common.service';
 import { EMPTY, catchError } from 'rxjs';
 import { User } from '../../model/user.interface';
 

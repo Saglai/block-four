@@ -1,6 +1,6 @@
 import { ActivatedRouteSnapshot, Router, RouterStateSnapshot, UrlTree } from "@angular/router";
 import { Observable } from "rxjs";
-import { CommonService } from "../../services/auth.service";
+import { CommonService } from "../../services/common.service";
 import { inject } from "@angular/core";
 
 export function AuthGuard(

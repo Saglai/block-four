@@ -23,4 +23,8 @@ export class CommonService {
   getPostById(id: number): Observable<User> {
     return this.http.get<User>(`${this.URL}/${id}`);
   }
+
+  addPost() {
+    
+  }
 }
