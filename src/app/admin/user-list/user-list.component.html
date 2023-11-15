@@ -1,1 +1,12 @@
-<p>user-list works!</p>
+<p>{{title}}</p>
+<div class="container" *ngFor="let user of userList$ | async as userList">
+    <div class="content">
+        {{user.id}}  {{user.username}}
+    </div>
+    
+    <div class="btn">
+        <button type="button" [routerLink]="[user.id]" [state]="{name: 'Data from user list'}">Details</button>
+    </div>
+</div>
+
+<p *ngIf="(page$ | async)?.['page'] as pageNumber">Page {{pageNumber}}</p>

@@ -1,0 +1,9 @@
+<div *ngIf="user; else elseBlock">
+    <h4>User {{user.id}}</h4>
+    <span>{{user.name}}</span>
+</div>
+
+<ng-template #elseBlock>
+    <span>Loading...</span>
+</ng-template>
+

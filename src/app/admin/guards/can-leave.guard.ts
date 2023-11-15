@@ -1,6 +1,6 @@
 import { ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree } from "@angular/router";
-import { AddUserComponent } from "./add-user/add-user.component";
-import { CanDeactivateComponent } from "../model/guard-component.interface";
+import { AddUserComponent } from "../add-user/add-user.component";
+import { CanDeactivateComponent } from "../../model/guard-component.interface";
 
 export function canLeave(
     component: CanDeactivateComponent,
