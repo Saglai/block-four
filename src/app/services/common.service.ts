@@ -9,6 +9,7 @@ import { User } from '../model/user.interface';
 export class CommonService {
   private URL = 'https://jsonplaceholder.typicode.com/users'
   private isLoggedIn = true;
+  test = 'default';
 
   constructor(private http: HttpClient) { }
 
@@ -22,9 +23,5 @@ export class CommonService {
 
   getPostById(id: number): Observable<User> {
     return this.http.get<User>(`${this.URL}/${id}`);
-  }
-
-  addPost() {
-    
   }
 }

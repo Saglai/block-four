@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home-page.ts/home.component';
 import { AuthGuard } from './admin/guards/authGuard';
-import { AdminPreloadStrategy } from './admin/admin-preload-strategy';
 
 const routes: Routes = [
   {path: '', component: HomeComponent, pathMatch: 'full'},
@@ -14,9 +13,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {
-    preloadingStrategy: AdminPreloadStrategy
-  })],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

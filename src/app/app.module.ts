@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { InjectionToken, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -28,3 +28,10 @@ import { CommonServiceIntercept } from './services/interceptor';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+export const API_URL = new InjectionToken<string>('API_URL', {
+  providedIn: 'root',
+  factory: () => {
+    return 'http//fake.com';
+  }
+})
